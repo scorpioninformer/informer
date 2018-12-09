@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title>Scorpion Informer</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+<link href="css/style2.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/footer-1.css" rel="stylesheet" type="text/css">
+    <link href="css/footer-2.css" rel="stylesheet" type="text/css">
+    <link href="css/footer-3.css" rel="stylesheet" type="text/css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'>
+    
+     
+        <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="1.jpg" type="" />
+    
+	<script type="text/javascript" src="js/Gallery-js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="js/Gallery-js/pixel-metro.js"></script>
+	<link rel="stylesheet" href="css/pixel-metro.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<style>
+
+    
+    
+    
+      
+    .pixel-metro {
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: auto;
+}
+.pixel-metro .content-metro {
+	display: none;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	z-index: 2;
+	/*3d option */
+	perspective: 600px;
+}
+.pixel-metro .content-metro a:hover{
+	text-decoration: none;
+}
+.pixel-metro .content-metro:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	z-index: 9999;
+	transition: border-color 0.5s;
+	box-sizing: border-box;
+	border-top-width: 0px;
+	border-bottom-width: 2px;
+	border-style: solid;
+	border-color: rgba(200,200,200,0);
+
+}
+.pixel-metro .content-metro:hover:before {
+	border-color: rgba(200,200,200,0.85);
+}
+.pixel-metro .content-metro .metro-sheet{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: none;
+	/*3d option*/
+	transform-style: preserve-3d;
+  	transition: transform 1s;
+	
+}
+.pixel-metro .content-metro .metro-sheet:first-child {
+	display: block;
+}
+.pixel-metro .content-metro .metro-sheet .icon-metro{
+	font-size: 4.3em;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top:50%;
+	left: 50%;
+}
+.pixel-metro .content-metro .metro-sheet .text-metro{
+	padding:5px;
+}
+.pixel-metro .content-metro .metro-sheet a{
+	color:#fff;
+}
+.pixel-metro .content-metro .metro-sheet img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/*3d option*/
+	backface-visibility: hidden;
+}
+.pixel-metro .content-metro .content-title {
+	padding: 8px;
+	background-color: rgba(0,0,0,0.65);
+	color:#eee;
+	position: absolute;
+	bottom: 0;
+}
+.pixel-metro .page-metro {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding:8px;
+}
+.pixel-metro .page-metro span{
+	width: 8px;
+	height: 8px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0.35);
+	margin: 0 2px;
+	cursor: pointer;
+}
+.pixel-metro .caption-smart {
+	color:#fff;
+	text-shadow: 2px 2px 3px #333;
+	position: absolute;
+	display: none;
+	opacity:0;
+}
+         
+
+</style>
+<body>
+
+	 <nav class="navbar navbar-custom navbar-nav navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="navbar-header">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+</button>
+				<a href="#" class="navbar-brand">Scorpion Informer</a>
+			</div>
+			</div>
+			<div class="col-md-8">
+			<div class="collapse navbar-collapse" id="robust">
+				<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="Gallery.html">Gallery</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+				<li><a href="Contact Us.html">Contact Us</a> </li>
+                <li><a href="enquiry.html">Enquiry</a> </li>      
+                    <li><div id="container"><ul1><li1> &nbsp;Language<ul1><br>
+                    <a href=""><li1>Kannada</li1></a><br><br>
+                    <a href="english/index.html"><li1>English</li1></a><br><br>
+                    <a href="hindi/index.html"><li1>Hindi</li1></a>
+                    </ul1></li1></ul1></div></li>             
+        
+			</ul>
+			</div>
+			</div>
+		</div>
+		</div>
+	</nav><br><br>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		<div id="about">
+		<div class="container"><br><br><br>
+	<center><strong id="ourteam">Gallery</strong></center><br>
+          
+            
+     <li><button href="" type="submit" class="btn btn-next btn-fill btn-danger btn-wd"><span class="mbri-share mbr-iconfont mbr-iconfont-btn"></span><h5>Photos Gallery</h5></button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+     <a href="video-gallery.html"<button href="" type="submit" class="btn btn-next btn-fill btn-danger btn-wd"><span class="mbri-share mbr-iconfont mbr-iconfont-btn"></span><h5>Videos Gallery</h5></button></li></a>
+    
+            
+            
+            
+            
+            
+            
+            
+            <section>
+		
+		<div class="your-css">
+
+			<div class="pixel-metro">
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img2/1.jpg"><img src="img2/1.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/2.jpg"><img src="img2/2.jpg"></a></div>
+
+	            </div>
+                <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href="img2/4.jpg"><img src="img2/4.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/5.jpg"><img src="img2/5.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/6.jpg"><img src="img2/6.jpg"></a></div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href="img2/7.jpg"><img src="img2/7.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/8.jpg"><img src="img2/8.jpg"></a></div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img2/9.jpg"><img src="img2/9.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/10.jpg"><img src="img2/10.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/11.jpg"><img src="img2/11.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img2/12.jpg"><img src="img2/12.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/13.jpg"><img src="img2/13.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img2/14.jpg"><img src="img2/14.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/15.jpg"><img src="img2/15.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href="img2/16.jpg"><img src="img2/16.jpg"></a></div>
+<div class="metro-sheet"><a href="img2/17.jpg"><img src="img2/17.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+	            	<a href=""><div class="metro-sheet">
+	                	<div class="text-metro">
+	                		<p><span class="glyphicon glyphicon-camera"></span></p><p>VIDEOS</p>
+	                	</div>
+	                </div></a>
+                    
+                    
+                    
+                    
+	            	<div class="metro-sheet">
+<div class="icon-metro"><a href="#"><span class="glyphicon glyphicon-camera"></span></a></div></div>
+	            </div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/18.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/19.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/20.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/21.jpg"></a></div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href=""><img src="img2/22.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/23.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/24.jpg"></a></div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/25.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/26.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/27.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/28.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/29.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/30.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/31.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/32.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/33.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/34.jpg"></a></div>
+<div class="metro-sheet"><div class="icon-metro"><a href="#"><span class="glyphicon glyphicon-fire"></span></a></div></div>
+	            </div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/35.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/36.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/37.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/38.jpg"></a></div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href=""><img src="img2/39.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/40.jpg"></a></div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/41.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/42.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/43.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/44.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/45.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/46.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/47.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/48.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/49.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/50.jpg"></a></div>
+	            </div>
+
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/51.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/52.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/53.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/54.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/55.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/56.jpg"></a></div>
+	            </div>
+        
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/57.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/58.jpg"></a></div>
+				</div>
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/59.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/60.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/61.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/62.jpg"></a></div>
+	            </div>
+	            <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/63.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/64.jpg"></a></div>
+	            </div>
+	            <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href=""><img src="img2/65.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/66.jpg"></a></div>
+	            </div>
+	            
+            	<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/67.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/68.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/69.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/70.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/71.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/72.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/73.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/74.jpg"></a></div>
+				</div>
+
+	            <div class="content-metro" size-o="normal">
+<div id="b1" class="metro-sheet"><a href=""><img src="img2/75.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/76.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/77.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href=""><img src="img2/78.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/79.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/80.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/81.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/82.jpg"></a></div>
+				</div>
+	            <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/83.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/84.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/85.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/86.jpg"></a></div>
+				</div>
+
+				<div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/87.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/88.jpg"></a></div>
+				</div>
+                 <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/89.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/90.jpg"></a></div>
+	            </div>
+                 <div class="content-metro" size-o="normal">
+<div class="metro-sheet"><a href=""><img src="img2/91.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/92.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="normal">
+<div id="b1" class="metro-sheet"><a href=""><img src="img2/93.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/94.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/95.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href=""><img src="img2/96.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/97.jpg"></a></div>
+	            </div>
+              <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/98.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/99.jpg"></a></div>
+				</div>
+                <div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/100.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/101.jpg"></a></div>
+				</div><div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/102.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/103.jpg"></a></div>
+				</div><div class="content-metro" size-o="small">
+<div class="metro-sheet"><a href=""><img src="img2/104.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/105.jpg"></a></div>
+				</div>
+                 <div class="content-metro" size-o="normal">
+<div id="b1" class="metro-sheet"><a href=""><img src="img2/106.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/107.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/108.jpg"></a></div>
+	            </div>
+                 <div class="content-metro" size-o="normal">
+<div id="b1" class="metro-sheet"><a href=""><img src="img2/109.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/110.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/111.jpg"></a></div>
+	            </div>
+                <div class="content-metro" size-o="wide">
+<div class="metro-sheet"><a href=""><img src="img2/112.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/113.jpg"></a></div>
+	            </div>
+                 <div class="content-metro" size-o="normal">
+<div id="b1" class="metro-sheet"><a href=""><img src="img2/114.jpg"></a></div>
+<div class="metro-sheet"><a href=""><img src="img2/115.jpg"></a></div>
+	            </div>
+                
+	        </div>
+	        <script type="text/javascript">
+	            $(".pixel-metro").pixel_metro({
+	            	height:"500px",
+	            	bg_metro:"img3/bg-metro2.jpg",
+	            	bg_opacity:0.55,
+	            	metro_rows:3,
+	            });
+	        </script>
+
+	    </div>
+	</section>
+            </div></div>
+            
+            
+            
+	<div id="team">
+	<div class="container">
+
+	<div class="row">
+		<center><strong id="ourteam">WHAT'S NEXT</strong></center><br><br>
+        <p style="color:#fff;text-align: center;font-size: 20px;">*ಟಿ.ಡಿ ರಾಜೇಗೌಡ -TDR* ರಾಜಕಾರಣದಲ್ಲಿ ತನ್ನದೇ ಆದ ಛಾಪು ಮೂಡಿಸಿರುವ ಅನುಭವಿ ರಾಜಕಾರಣಿ. ಶೃಂಗೇರಿ ಕ್ಷೇತ್ರದಿಂದ ಪ್ರಥಮ ಬಾರಿಗೆ ಜನಾಶೀರ್ವಾದಿಂದ ಶಾಸಕರಾಗಿ ಆಯ್ಕೆಯಾಗಿರುವ ಜನನಾಯಕ. ಚಿಕ್ಕಮಗಳೂರಿನ ತಳ್ಳಿಹಳ್ಳದಲ್ಲಿ ಜನಿಸಿದ‌ ರಾಜೇಗೌಡರು ರಾಜಕೀಯದಲ್ಲಿ ಸ್ಥಾನ ಬಯಸಿ ಹೋದವರಲ್ಲ.‌ ಹರಸಿ ಬಂದ ಸ್ಥಾನಕ್ಕೆ ನ್ಯಾಯ ಒದಗಿಸುವ ಜನಪರ ಕಾಳಜಿಯುಳ್ಳ ನೇತಾರರು. 1 ಬಾರಿ ಖಾಂಡ್ಯ ಜಿಲ್ಲಾ ಪಂಚಾಯಿತಿ ಕ್ಷೇತ್ರದಿಂದ ಮತ್ತು 1 ಬಾರಿ ವಸ್ತಾರೆ ಕ್ಷೇತ್ರದಿಂದ ಚುನಾಯಿತರಾಗಿ‌ ಅತಿಹೆಚ್ಚು ‌ಅಭಿವೃದ್ಧಿ ಕೆಲಸಗಳನ್ನು ಮಾಡಿ ಜನ ಮೆಚ್ಚುಗೆಗೆ ಪಾತ್ರರಾಗಿದ್ದಾರೆ....
+</p>
+      <br><br>
+	<div class="col-md-3">
+          
+        
+		
+   
+        
+        
+	</div>
+	</div>
+        </div>
+                   
+  	
+      
+ 
+	</div>
+            
+            
+            
+  
+    
+    
+    
+    
+    
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

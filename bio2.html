@@ -1,0 +1,860 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Scorpion Informer</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css">
+<link href="css/style2.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css'>
+    <link href="css/footer-1.css" rel="stylesheet" type="text/css">
+    <link href="css/footer-2.css" rel="stylesheet" type="text/css">
+    <link href="css/footer-3.css" rel="stylesheet" type="text/css">
+    <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="1.jpg" type="" />
+<style>
+.wrapper{
+	display: grid;
+	width: 900px;
+	max-width: 100%;
+	height: 60vh;
+	
+    margin-bottom: -10%;
+	grid-gap: 8px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+.box{
+	background-color: transparent;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.box.one{grid-column: span 3;grid-row: span 4;background-image: url(img2/12.jpg);	}
+.box.two{grid-column: span 2;grid-row: span 2;background-image: url(img2/13.jpg);}
+.box.five{grid-column: 4 / span 2;grid-row: 3 / span 2;background-image: url(img2/14.jpg);}
+
+    .box.six{grid-column: span 3;grid-row: span 4;background-image: url(img2/15.jpg);	}
+    .box.seven{grid-column: span 2;grid-row: span 2;background-image: url(img2/17.jpg);}
+    .box.eight{grid-column: 4 / span 2;grid-row: 3 / span 2;background-image: url(img2/16.jpg);}
+
+    .box.nine{grid-column: span 3;grid-row: span 4;background-image: url(img2/18.jpg);	}
+    .box.ten{grid-column: span 2;grid-row: span 2;background-image: url(img2/19.jpg);}
+    .box.eleven{grid-column: 4 / span 2;grid-row: 3 / span 2;background-image: url(img2/20.jpg);}
+
+    .box.twele{grid-column: span 3;grid-row: span 4;background-image: url(img2/21.jpg);	}
+    .box.thirteen{grid-column: span 2;grid-row: span 2;background-image: url(img2/22.jpg);}
+    .box.fourteen{grid-column: 4 / span 2;grid-row: 3 / span 2;background-image: url(img2/23.jpg);}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+
+.button__holder{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    &:after{
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: 0; right: 0; bottom: 0; left: 0;
+    }
+}
+.plus{
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    color: #1a1a1a;
+    background: lightgray;
+    border-radius: 50%;
+    border: 5px;
+    font-size: 27px;
+    }
+}   
+    
+    
+
+    
+    
+
+
+.well-social-post {
+  border-radius: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding:0;
+}
+
+.well-social-post .glyphicon,
+.well-social-post .fa,
+.well-social-post [class^='icon-'],
+.well-social-post [class*='icon-'] {
+  font-weight: bold;
+  color: #999999;
+}
+
+.well-social-post a,
+.well-social-post a:hover,
+.well-social-post a:active,
+.well-social-post a:focus {
+  text-decoration: none;
+}
+
+.well-social-post .list-inline {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.well-social-post .list-inline li {
+  position: relative;
+}
+
+.well-social-post .list-inline li.active::after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  content: "";
+  top: 30px;
+  left: 50%;
+  left: -webkit-calc(50% - 5px);
+  left: -moz-calc(50%-5px);
+  left: calc(50% - 5px);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #dddddd;
+}
+
+.well-social-post .list-inline li.active a {
+  color: #222222;
+  font-weight: bold;
+}
+
+.well-social-post .form-control {
+  width: 100%;
+  min-height: 100px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.well-social-post .list-inline {
+  padding: 10px;
+}
+
+.well-social-post .list-inline li + li {
+  margin-left: 10px;
+}
+
+.well-social-post .post-actions {
+  margin: 0;
+  background-color: #f6f7f8;
+  border-top-color: #e9eaed;
+}                                                            
+    
+</style>
+</head>
+
+<body>
+<div class="containera">
+
+<div id="posts">
+    
+
+    
+    <nav class="navbar navbar-custom navbar-nav navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="navbar-header">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+</button>
+				<a href="#" class="navbar-brand">Scorpion Informer</a>
+			</div>
+			</div>
+			<div class="col-md-8">
+			<div class="collapse navbar-collapse" id="robust">
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+				<li><a href="Contact Us.html">Contact Us</a> </li>
+                <li><a href="enquiry.html">Enquiry</a> </li>      
+                    <li><div id="container"><ul1><li1> &nbsp;Language<ul1><br>
+                    <a href=""><li1>Kannada</li1></a><br><br>
+                    <a href="english/index.html"><li1>English</li1></a><br><br>
+                    <a href="hindi/index.html"><li1>Hindi</li1></a>
+                    </ul1></li1></ul1></div></li>             
+        
+			</ul>
+			</div>
+			</div>
+		</div>
+		</div>
+	</nav><br><br>
+
+    
+    
+    
+    
+    
+    
+    
+   <div id="team">
+	<div class="container">
+	<div class="row">
+		<center><strong id="Service2">paragraph here:</strong></center><br><br>
+        
+      
+          <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+   
+    <style>
+        /* jssor slider loading skin spin css */
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .jssora093 {display:block;position:absolute;cursor:pointer;}
+        .jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093:hover {opacity:.8;}
+        .jssora093.jssora093dn {opacity:.6;}
+        .jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+
+        .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+        .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+        .jssort101 .p:hover{padding:2px;}
+        .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+        .jssort101 .p:hover.pdn{padding:0;}
+        .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+        .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+        .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+        .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+    
+    
+    
+ 
+</style>
+      <div class="contain">  
+   <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:960px;height:480px;overflow:hidden;visibility:hidden;background-color:#24262e;">
+        <!-- Loading Screen -->
+       
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
+            
+                
+            <div><img data-u="image" src="img2/20.jpg" /><img data-u="thumb" src="img2/20.jpg" /></div>
+            <div><img data-u="image" src="img2/21.jpg" /><img data-u="thumb" src="img2/21.jpg" /></div>
+            <div><img data-u="image" src="img2/22.jpg" /><img data-u="thumb" src="img2/22.jpg" /></div>
+            <div><img data-u="image" src="img2/23.jpg" /><img data-u="thumb" src="img2/23.jpg" /></div>
+            <div><img data-u="image" src="img2/24.jpg" /><img data-u="thumb" src="img2/24.jpg" /></div>
+            <div><img data-u="image" src="img2/25.jpg" /><img data-u="thumb" src="img2/25.jpg" /></div>
+            <div><img data-u="image" src="img2/26.jpg" /><img data-u="thumb" src="img2/26.jpg" /></div>
+            <div><img data-u="image" src="img2/27.jpg" /><img data-u="thumb" src="img2/27.jpg" /></div>
+            <div><img data-u="image" src="img2/28.jpg" /><img data-u="thumb" src="img2/28.jpg" /></div>
+
+                
+                
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;top:0px;width:240px;height:480px;background-color:#000;" data-autocenter="2" data-scale-left="0.75">
+            <div data-u="slides">
+                <div data-u="prototype" class="p" style="width:99px;height:66px;">
+                    <div data-u="thumbnailtemplate" class="t"></div>
+                    <svg viewBox="0 0 16000 16000" class="cv">
+                        <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                        <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                        <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:270px;" data-autocenter="2">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+                <polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+                <line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2">
+            <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+                <polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+                <line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+            </svg>
+        </div>
+    </div></div>
+            <script src="js/slider-js/jssor.slider.min.js" type="text/javascript"></script>
+    <script src="js/slider-js/slider.min.js.js">
+        
+    </script> 
+          <script type="text/javascript">jssor_1_slider_init();</script>  
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		<div class="team-member wow fadeInLeft" data-wow-duration="3s">
+		<center><strong id="Service2">Documentation</strong></center><br>
+			<p style=" font-size: 20px;color:#fff;">
+                paragraph here:</p>
+            
+<br><br></div>
+   
+
+    
+    
+    
+    
+    
+  
+     <div class="well well-sm well-social-post">
+        <form>
+          <ul class="list-inline" id='list_PostActions'>
+            <li style="color:#fff;">Update Status</li>
+            <li></li>
+            <li></li>
+          </ul>
+          <textarea class="form-control" placeholder="What's in your mind?"></textarea>
+          <ul class='list-inline post-actions'>
+            <li style="font-size: 30px;"><i class="fas fa-camera" aria-hidden="true"></i></li>
+            <li style="font-size: 30px;"><i class="fas fa-thumbs-up"></i></li>
+            <li style="font-size: 30px;"><i class="fas fa-share-alt"></i></li>
+             <li><button href="" type="submit" class="btn btn-next btn-fill btn-danger btn-wd"><span class="mbri-share mbr-iconfont mbr-iconfont-btn"></span><h5>Post a Comment</h5></button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>       
+    
+    
+    </div></div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="team1">
+	<div class="container">
+	<div class="row"><br>
+		<center><strong id="Service1">paragraph here:..</strong></center><br><br>
+  
+          
+        
+        
+        
+        
+        
+        
+        
+        
+         <!-- Jssor Slider Begin -->
+    <script type="text/javascript" src="js/slider-js/jssor.slider.min.js"></script>
+    
+    <script>
+        jssor_slider1_init = function () {
+            var options = {
+                $AutoPlay: 1,                                    //[Optional] Auto play or not, to enable slideshow, this option must be set to greater than 0. Default value is 0. 0: no auto play, 1: continuously, 2: stop at last slide, 4: stop on click, 8: stop on user navigation (by arrow/bullet/thumbnail/drag/arrow key navigation)
+                $Idle: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+                $UISearchMode: 0,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+
+                $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                    $Loop: 1,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, default value is 1
+                    $SpacingX: 3,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $SpacingY: 3,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                    
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                        $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                        $Steps: 6                                       //[Optional] Steps to go for each navigation request, default value is 1
+                    }
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+
+            /*#region responsive code begin*/
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 720));
+                else
+                    $Jssor$.$Delay(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    
+    <div id="slider1_container" style="position: relative; width: 750px;left:10%;height: 480px; overflow: hidden;">
+
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+        </div>
+
+        <!-- Slides Container -->
+        <div data-u="slides" style="position: absolute; left: 0px; top: 0px; width: 720px; height: 480px;
+            overflow: hidden;">
+            <div>
+                <img data-u="image" src="img2/29.jpg" />
+                <img data-u="thumb" src="img2/29.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img2/30.jpg" />
+                <img data-u="thumb" src="img2/30.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img2/31.jpg" />
+                <img data-u="thumb" src="img2/31.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img2/32.jpg" />
+                <img data-u="thumb" src="img2/32.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img2/33.jpg" />
+                <img data-u="thumb" src="img2/33.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img2/34.jpg" />
+                <img data-u="thumb" src="img2/34.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img2/35.jpg" />
+                <img data-u="thumb" src="img2/35.jpg" />
+            </div>
+
+        
+        </div>
+        <!--#region Thumbnail Navigator Skin Begin -->
+        <!-- Help: https://www.jssor.com/development/slider-with-thumbnail-navigator.html -->
+        <style>
+            /* jssor slider loading skin spin css */
+            .jssorl-009-spin img {
+                animation-name: jssorl-009-spin;
+                animation-duration: 1.6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes jssorl-009-spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            /* jssor slider thumbnail navigator skin 07 css */
+            /*
+            .jssort07 .p            (normal)
+            .jssort07 .p:hover      (normal mouseover)
+            .jssort07 .pav          (active)
+            .jssort07 .pav:hover    (active mouseover)
+            .jssort07 .pdn          (mousedown)
+            */
+            .jssort07 {
+                position: absolute;
+                /* size of thumbnail navigator container */
+                width: 800px;
+                height: 100px;
+            }
+
+                .jssort07 .p {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 99px;
+                    height: 66px;
+                }
+
+                .jssort07 .i {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 99px;
+                    height: 66px;
+                    filter: alpha(opacity=80);
+                    opacity: .8;
+                }
+
+                .jssort07 .p:hover .i, .jssort07 .pav .i {
+                    filter: alpha(opacity=100);
+                    opacity: 1;
+                }
+
+                .jssort07 .o {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 97px;
+                    height: 64px;
+                    border: 1px solid #000;
+                    box-sizing: content-box;
+                    transition: border-color .6s;
+                    -moz-transition: border-color .6s;
+                    -webkit-transition: border-color .6s;
+                    -o-transition: border-color .6s;
+                }
+
+                .jssort07 .pav .o {
+                    border-color: #0099ff;
+                }
+
+                .jssort07 .p:hover .o {
+                    border-color: #fff;
+                    transition: none;
+                    -moz-transition: none;
+                    -webkit-transition: none;
+                    -o-transition: none;
+                }
+
+                .jssort07 .p.pdn .o {
+                    border-color: #0099ff;
+                }
+
+                * html .jssort07 .o {
+                    /* ie quirks mode adjust */
+                    width /**/: 99px;
+                    height /**/: 66px;
+                }
+        </style>
+        <!-- thumbnail navigator container -->
+        <div data-u="thumbnavigator" class="jssort07" style="width: 720px; height: 100px; left: 0px; bottom: 0px;">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div data-u="thumbnailtemplate" class="i"></div>
+                    <div class="o"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+            
+            <!--#region Arrow Navigator Skin Begin -->
+            <!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+            <style>
+                .jssora051 {display:block;position:absolute;cursor:pointer;}
+                .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+                .jssora051:hover {opacity:.8;}
+                .jssora051.jssora051dn {opacity:.5;}
+                .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+            </style>
+            <div data-u="arrowleft" class="jssora051" style="width:40px;height:40px;top:123px;left:8px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+            </div>
+            <div data-u="arrowright" class="jssora051" style="width:40px;height:40px;top:123px;right:8px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+            </div>
+            <!--#endregion Arrow Navigator Skin End -->
+
+        </div>
+        <!--#endregion Thumbnail Navigator Skin End -->
+
+        <!-- Trigger -->
+        <script>
+            jssor_slider1_init();
+        </script>
+
+    </div>
+    <!-- Jssor Slider End -->
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		<div class="team-member wow fadeInLeft" data-wow-duration="3s">
+		<center><strong id="Service1">Documentation</strong></center><br>
+			<p style=" font-size: 20px;color:#000;">
+              paragraph here:..</p>
+<br><br></div>
+   
+    
+    
+    
+    
+    
+                                                  
+   <div class="well well-sm well-social-post">
+        <form>
+          <ul class="list-inline" id='list_PostActions'>
+            <li style="color:#fff;">Update Status</li>
+            <li></li>
+            <li></li>
+          </ul>
+          <textarea class="form-control" placeholder="What's in your mind?"></textarea>
+          <ul class='list-inline post-actions'>
+            <li style="font-size: 30px;"><i class="fas fa-camera" aria-hidden="true"></i></li>
+            <li style="font-size: 30px;"><i class="fas fa-thumbs-up"></i></li>
+            <li style="font-size: 30px;"><i class="fas fa-share-alt"></i></li>
+             <li><button href="" type="submit" class="btn btn-next btn-fill btn-danger btn-wd"><span class="mbri-share mbr-iconfont mbr-iconfont-btn"></span><h5>Post a Comment</h5></button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>       
+    
+    
+    </div></div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="team">
+	<div class="container">
+	<div class="row"><br>
+		<center><strong id="Service2">paragraph here:..</strong></center><br><br>
+
+        
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="js/slider-js/New/engine1/style.css" />
+	<script type="text/javascript" src="js/slider-js/New/engine1/jquery.js"></script>
+	  
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="img2/38.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="img2/37.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="img2/36.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="img2/39.jpg" alt="" title="" id="wows1_2"/></li>
+	</ul></div>
+	<div class="ws_script" style="position:absolute;left:-99%; "></div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="js/slider-js/New/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="js/slider-js/New/engine1/script.js"></script>
+	
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		<div class="team-member wow fadeInLeft" data-wow-duration="3s">
+		<center><strong id="Service2">Documentation</strong></center><br>
+			<p style=" font-size: 20px;color:#fff;">
+               paragraph here:
+
+</p>
+<br><br></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         <div class="well well-sm well-social-post">
+        <form>
+          <ul class="list-inline" id='list_PostActions'>
+            <li style="color:#fff;">Update Status</li>
+            <li></li>
+            <li></li>
+          </ul>
+          <textarea class="form-control" placeholder="What's in your mind?"></textarea>
+          <ul class='list-inline post-actions'>
+            <li style="font-size: 30px;"><i class="fas fa-camera" aria-hidden="true"></i></li>
+            <li style="font-size: 30px;"><i class="fas fa-thumbs-up"></i></li>
+            <li style="font-size: 30px;"><i class="fas fa-share-alt"></i></li>
+             <li><button href="" type="submit" class="btn btn-next btn-fill btn-danger btn-wd"><span class="mbri-share mbr-iconfont mbr-iconfont-btn"></span><h5>Post a Comment</h5></button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>       
+    
+    
+        
+        
+        
+        
+        
+        
+        </div></div></div>
+   
+
+    
+  
+        
+        
+        
+        
+        </div></div></div>
+    
+    
+      
+	<nav class="menuShare">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open"><i class="fa fa-share-alt share-icon"></i></label>
+                <a class="menu-item twitter_share_btn" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                <a class="menu-item google_plus_share_btn" href="#"><i class="fab fa-google" aria-hidden="true"></i></a>
+                <a class="menu-item whatsapp_share_btn" href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                <a class="menu-item facebook_share_btn" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a class="menu-item linkedin_share_btn" href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+	</nav>
+  </div> 
+  <script src='js/menuShare.js'></script>
+
+  
+    
+    
+    
+    
+    
+    
+    
+<button class="aui-button aui-button--primary aui-button--stretched aui-button--sticky aui-js-response" type="button">   
+<span class="aui-button__text">Designed By:<a href="https://scorpioninformer123.github.io/Scorpion_Informer/"> Nithin Gowda</a></span></button>
+<script src='js/button.js'></script>
+
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+</div>
+</div>
+<footer><br><br><br>
+        <nav>
+            <ul>
+                <li><h3><a id="next-page" href="bio3.html">Next page</a></a></h3></li>
+    <div class="container">
+    <a href="bio3.html"><width class="entypo-right-open-big">Load More...</width></a> 
+  </div>
+        <br><br><br><br> <br>     </ul>
+        </nav>
+    </footer>
+</body>
+</html>
